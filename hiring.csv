@@ -1,9 +1,12 @@
 experience,test_score,interview,salary
-,8,9,50000
-,8,6,45000
+one,8,9,50000
+two,8,6,45000
 five,6,7,60000
 two,10,10,65000
 seven,9,6,70000
 three,7,10,62000
-ten,,7,72000
+ten,5,7,72000
 eleven,7,8,80000
+three,6,6,90000
+five,13,14,100000
+eleven,2,4,70000

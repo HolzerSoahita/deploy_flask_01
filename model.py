@@ -21,7 +21,8 @@ dataset['experience'].fillna(0, inplace=True)
 dataset['test_score'].fillna(dataset['test_score'].mean(), inplace=True)
 
 # now specify the Input features for training
-X = dataset.iloc[['experience', 'test_score', 'interview']]
+#X = dataset.iloc[['experience', 'test_score', 'interview']]
+X=dataset.iloc[:,:3]
 
 # Now some features are string/text, we need to convert them to number
 # Converting words to integer values
@@ -58,9 +59,4 @@ model = pickle.load(open('model.pkl', 'rb'))
 print("Test one prediction")
 # using predict() function to test your model
 
-
-y_true = 60000
-
-y_pred = model.predict(['five', 6, 7, 60000])
-
-print(f"Accuracy score : {accuracy_score(y_true, y_pred)}")
+print(model.predict([[5,6,7]]))
